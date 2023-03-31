@@ -4,7 +4,6 @@
 <link rel="stylesheet" href="style.css">
 <title>LOGIN</title>
 </head>
-<>
   <body>
     <!-- div.login-page>div.form>div.login>(div.login-header>form) -->
     <div class="login-page">
@@ -15,13 +14,14 @@
             <p>Please enter your credentials to login.</p>
           </div>
         </div>
-        <form class="login-form">
-          <input type="text" placeholder="username"/>
-          <input type="password" placeholder="password"/>
-          <button>login</button>
-          <p class="message">Not registered? <a href="#">Create an account</a></p>
+        <form name="login-form" action="C:\xampp\htdocs\Front-End\index.html" id="login-form" class="login-form" " method="post">
+          <input type="text" id="username" placeholder="username"/>
+          <input type="password" id="password" placeholder="password"/>
+          <button type="submit" class="btn"  id="btn">LOGIN</button>
+          <p class="message">Not registered? <a href="C:\xampp\htdocs\Front-End\registration-form.html">Create an account</a></p>
         </form>
       </div>
     </div>
+    <script src="script.js"></script>
 </body>
 </html>
