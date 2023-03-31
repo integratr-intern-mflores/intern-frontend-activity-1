@@ -1,0 +1,138 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:300);
+header .header{
+  /* bgc */
+  background-color: #fff;
+  /* h */
+  height: 45px;
+}
+header a img{
+  /* w */
+  width: 134px;
+  /* mt */
+  margin-top: 4px;
+}
+.login-page {
+  /* w */
+  width: 360px;
+  /* p */
+  padding: 8% 0 0;
+  /* m:a */
+  margin: auto;
+}
+.login-page .form .login{
+  /* mt */
+  margin-top: -31px;
+  /* mb */
+margin-bottom: 26px;
+}
+.form {
+  /* pos */
+  position: relative;
+  /* z */
+  z-index: 1;
+  /* bgc */
+  background: #FFFFFF;
+  /* maw */
+  max-width: 360px;
+  /* m */
+  margin: 0 auto 100px;
+  /* p */
+  padding: 45px;
+  /* ta:c */
+  text-align: center;
+  /* bxsh:ra */
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+.form input {
+  /* ff: */
+  font-family: "Roboto", sans-serif;
+  /* ol  */
+  outline: 0;
+  /* bgc  */
+  background: #f2f2f2;
+  /* w  */
+  width: 100%;
+  /* bd  */
+  border: 0;
+  /* m */
+  margin: 0 0 15px;
+  /* p  */
+  padding: 15px;
+  /* bxz  */
+  box-sizing: border-box;
+  /* fz  */
+  font-size: 14px;
+}
+.form button {
+  /* ff:  */
+  font-family: "Roboto", sans-serif;
+  /* tt  */
+  text-transform: uppercase;
+  /* ol  */
+  outline: 0;
+  /* bgc  */
+  background-color: #328f8a;
+  /* bgi  */
+  background-image: linear-gradient(45deg,#328f8a,#08ac4b);
+  /* w  */
+  width: 100%;
+  /* bd  */
+  border: 0;
+  /* p  */
+  padding: 15px;
+  /* c  */
+  color: #FFFFFF;
+  /* fz  */
+  font-size: 14px;
+  -webkit-transition: all 0.3 ease;
+  /* trs  */
+  transition: all 0.3 ease;
+  /* cur  */
+  cursor: pointer;
+}
+.form .message {
+  /* m  */
+  margin: 15px 0 0;
+  /* c  */
+  color: #b3b3b3;
+  /* fz  */
+  font-size: 12px;
+}
+.form .message a {
+  /* c  */
+  color: #4CAF50;
+  /* td, td:n  */
+  text-decoration: none;
+}
+
+.container {
+  /* pos  */
+  position: relative;
+  /* z  */
+  z-index: 1;
+  /* maw  */
+  max-width: 300px;
+  /* m  */
+  margin: 0 auto;
+}
+
+body {
+  /* bgc  */
+  background-color: #328f8a;
+  /* bgi  */
+  background-image: linear-gradient(45deg,#328f8a,#08ac4b);
+  /* ff:  */
+  font-family: "Roboto", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+    /* h  */
+  height: 100%;
+  /* m  */
+  margin: 0;
+  /* bgr  */
+  background-repeat: no-repeat;
+  /* bga  */
+  background-attachment: fixed; 
+  /* m  */
+  margin:200px;
+}
