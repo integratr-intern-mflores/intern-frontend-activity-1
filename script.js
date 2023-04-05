@@ -35,5 +35,3 @@ function formValidation(){
         alert("Logged in");
     }
 }
-
-

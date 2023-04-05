@@ -34,8 +34,6 @@ margin-bottom: 26px;
   background: #FFFFFF;
   /* maw */
   max-width: 360px;
-  /* m */
-  margin: 0 auto 100px;
   /* p */
   padding: 45px;
   /* ta:c */
@@ -134,5 +132,31 @@ body {
   /* bga  */
   background-attachment: fixed; 
   /* m  */
-  margin:200px;
+  margin:100px;
+}
+
+.login-form #errfname{
+  text-align: left;
+  color: red;
+  display: none;
+}
+.login-form #errlname{
+  text-align: left;
+  color: red;
+  display: none;
+}
+.login-form #erruname{
+  text-align: left;
+  color: red;
+  display: none;
+}
+.login-form #errpass{
+  text-align: left;
+  color: red;
+  display: none;
+}
+.login-form #errcpass{
+  text-align: left;
+  color: red;
+  display: none;
 }
