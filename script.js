@@ -1,10 +1,11 @@
+const isContainsUppercase = /^(?=.*[A-Z]).*$/;
+const isContainsLowercase = /^(?=.*[a-z]).*$/;
+const isContainsNumber = /^(?=.*[0-9]).*$/;
+const isContainsSymbol =/^(?=.*[~`!@#$%^&*()--+={}\[\]|\\:;"'<>,.?/_₹]).*$/;
 function formValidation(){
-    const isContainsUppercase = /^(?=.*[A-Z]).*$/;
-    const isContainsLowercase = /^(?=.*[a-z]).*$/;
-    const isContainsNumber = /^(?=.*[0-9]).*$/;
-    const isContainsSymbol =/^(?=.*[~`!@#$%^&*()--+={}\[\]|\\:;"'<>,.?/_₹]).*$/;
-    let vpass = document.getElementById("password").value;
-    let vcpass = document.getElementById("confirmPassword").value;
+    // argument variable (av)
+    let avpass = document.getElementById("password").value;
+    let avcpass = document.getElementById("confirmPassword").value;
     let fname = document.forms['form']['nfname'];
     let lname = document.forms['form']['nlname'];
     let uname = document.forms['form']['nuname'];
@@ -29,33 +30,39 @@ function formValidation(){
             foundNameArr.focus();
             return false;
         }
-        if (vpass.length < 14) {
-            document.getElementById('errP').innerHTML = 'Error: The Password should be at least 14 characters.';
-            return false;
-        }
-        if (!isContainsLowercase.test(vpass)) {
-            document.getElementById('errP').innerHTML = 'Error: The Password should contain Lowercase characters.';
-            return false;
-        }
-        if (!isContainsUppercase.test(vpass)) {
-            document.getElementById('errP').innerHTML = 'Error: The Password should contain Uppercase characters.';
-            return false;
-        }
-        if (!isContainsNumber.test(vpass)) {
-            document.getElementById('errP').innerHTML = 'Error: The password should contain a Number.';
-            return false;
-        }
-        if (!isContainsSymbol.test(vpass)) {
-            document.getElementById('errP').innerHTML = 'Error: The password should contain Symbol characters.';
-            return false;
-        }
-        if (vpass != vcpass) {
-            document.getElementById('errCp').innerHTML = 'Error: The Password should be the same.';
-            return false;
-        }
    console.log(foundArr);
    console.log(foundNameArr);
    return false;
 
+
 });
+validatePassword(avpass, avcpass);
+}
+
+function validatePassword(vpass, vcpass)
+{
+    if (vpass.length < 14) {
+        document.getElementById('errP').innerHTML = 'Error: The Password should be at least 14 characters.';
+        return false;
+    }
+    if (!isContainsLowercase.test(vpass)) {
+        document.getElementById('errP').innerHTML = 'Error: The Password should contain Lowercase characters.';
+        return false;
+    }
+    if (!isContainsUppercase.test(vpass)) {
+        document.getElementById('errP').innerHTML = 'Error: The Password should contain Uppercase characters.';
+        return false;
+    }
+    if (!isContainsNumber.test(vpass)) {
+        document.getElementById('errP').innerHTML = 'Error: The password should contain a Number.';
+        return false;
+    }
+    if (!isContainsSymbol.test(vpass)) {
+        document.getElementById('errP').innerHTML = 'Error: The password should contain Symbol characters.';
+        return false;
+    }
+    if (vpass != vcpass) {
+        document.getElementById('errCp').innerHTML = 'Error: The Password should be the same.';
+        return false;
+    }
 }
