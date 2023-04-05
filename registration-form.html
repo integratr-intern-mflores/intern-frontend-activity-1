@@ -14,16 +14,16 @@
             <p>Please enter your Informations to register.</p>
           </div>
         </div>
-        <form class="login-form" name="form1">
-          <input type="text" placeholder="first name" id="first_name"/>
+        <form class="login-form" name="form">
+          <input type="text" placeholder="first name" id="first_name" name="nfname"/>
           <div id="errFn"></div>
-          <input type="text" placeholder="last name" id="last_name"/>
+          <input type="text" placeholder="last name" id="last_name" name="nlname"/>
           <div id="errLn"></div>
-          <input type="text" placeholder="username" id="username"/>
+          <input type="text" placeholder="username" id="username" name="nuname"/>
           <div id="errUn"></div>
-          <input type="password" placeholder="password" name="password" id="password"/>
+          <input type="password" placeholder="password" name="npassword" id="password"/>
           <div id="errP"></div>
-          <input type="password" placeholder="confirm password" name="confirm_password" id="confirmPassword"/>
+          <input type="password" placeholder="confirm password" name="nconfirm_password" id="confirmPassword"/>
           <div id="errCp"></div>
           <button type="submit" class="btn" onclick="formValidation()" >REGISTER</button>
         </form>

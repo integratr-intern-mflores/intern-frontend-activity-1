@@ -5,11 +5,20 @@ header .header{
   /* h */
   height: 45px;
 }
+h3{
+  margin: 0;
+}
+p{
+  margin: auto;
+}
 header a img{
   /* w */
   width: 134px;
   /* mt */
   margin-top: 4px;
+}
+button{
+  margin: 5px 5px 5px;
 }
 .login-page {
   /* w */
@@ -21,7 +30,7 @@ header a img{
 }
 .login-page .form .login{
   /* mt */
-  margin-top: -31px;
+  /* margin-top: -31px; */
   /* mb */
 margin-bottom: 26px;
 }
@@ -52,9 +61,9 @@ margin-bottom: 26px;
   width: 100%;
   /* bd  */
   border: 0;
-  /* m */
-  margin: 0 0 15px;
-  /* p  */
+  /* m  */
+  margin: 5px 5px 5px; 
+ /* p  */
   padding: 15px;
   /* bxz  */
   box-sizing: border-box;
@@ -135,28 +144,27 @@ body {
   margin:100px;
 }
 
-.login-form #errfname{
+.login-form #errFn{
   text-align: left;
   color: red;
-  display: none;
+  /* display: none; */
 }
-.login-form #errlname{
+.login-form #errLn{
   text-align: left;
   color: red;
-  display: none;
+  /* display: none; */
 }
-.login-form #erruname{
+.login-form #errUn{
   text-align: left;
   color: red;
-  display: none;
+  /* display: none; */
 }
-.login-form #errpass{
+.login-form #errP{
   text-align: left;
   color: red;
-  display: none;
 }
-.login-form #errcpass{
+.login-form #errCp{
   text-align: left;
   color: red;
-  display: none;
+  /* display: none; */
 }

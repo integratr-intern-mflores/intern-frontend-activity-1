@@ -35,3 +35,5 @@ function formValidation(){
         alert("Logged in");
     }
 }
+
+// document.getElementById('demo').innerHTML = 'Input is Reqiured.';
