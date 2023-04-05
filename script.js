@@ -1,39 +1,61 @@
 function formValidation(){
-    var password = document.getElementById("password").value;
-    var confirmPassword = document.getElementById("confirmPassword").value;
-    var first_name = document.getElementById("first_name").value;
-    var lastname = document.getElementById("last_name").value;
-    var username = document.getElementById("username").value;
     const isContainsUppercase = /^(?=.*[A-Z]).*$/;
     const isContainsLowercase = /^(?=.*[a-z]).*$/;
     const isContainsNumber = /^(?=.*[0-9]).*$/;
     const isContainsSymbol =/^(?=.*[~`!@#$%^&*()--+={}\[\]|\\:;"'<>,.?/_₹]).*$/;
+    let vpass = document.getElementById("password").value;
+    let vcpass = document.getElementById("confirmPassword").value;
+    let fname = document.forms['form']['nfname'];
+    let lname = document.forms['form']['nlname'];
+    let uname = document.forms['form']['nuname'];
+    let pass = document.forms['form']['npassword'];
+    let cpass = document.forms['form']['nconfirm_password'];
+    let idArray = ["first_name", "last_name","username","password","confirmPassword"];
+    let errArray = ["errFn","errLn","errUn","errP","errCp"];
+    let nameArray = [fname,lname,uname,pass,cpass];
+    let x = 0;
+    idArray.forEach((id,idIndex) => {
+        let y =x++;
+        let foundArr = errArray.find((fA,fAI)=>{
+            return fAI === y;
+        });
+        let foundNameArr = nameArray.find((fNA,fNI)=>{
+            return fNI === y;
+        });
+        let input = document.getElementById(id).value;
+        if(input == "") {
+            document.getElementById(foundArr).innerHTML = 'Input is Reqiured.';
+            foundNameArr.style.border = "1px solid red";
+            foundNameArr.focus();
+            return false;
+        }
+        if (vpass.length < 14) {
+            document.getElementById('errP').innerHTML = 'Error: The Password should be at least 14 characters.';
+            return false;
+        }
+        if (!isContainsLowercase.test(vpass)) {
+            document.getElementById('errP').innerHTML = 'Error: The Password should contain Lowercase characters.';
+            return false;
+        }
+        if (!isContainsUppercase.test(vpass)) {
+            document.getElementById('errP').innerHTML = 'Error: The Password should contain Uppercase characters.';
+            return false;
+        }
+        if (!isContainsNumber.test(vpass)) {
+            document.getElementById('errP').innerHTML = 'Error: The password should contain a Number.';
+            return false;
+        }
+        if (!isContainsSymbol.test(vpass)) {
+            document.getElementById('errP').innerHTML = 'Error: The password should contain Symbol characters.';
+            return false;
+        }
+        if (vpass != vcpass) {
+            document.getElementById('errCp').innerHTML = 'Error: The Password should be the same.';
+            return false;
+        }
+   console.log(foundArr);
+   console.log(foundNameArr);
+   return false;
 
-    if (first_name == ""){
-        alert("Error: The First name field is Empty."); 
-    }else if(lastname == ""){
-        alert("Error: The Last name field is Empty.");
-    }else if(username == ""){
-        alert("Error: The Username field is Empty.");
-    }else if(password == ""){
-        alert("Error: The Password field is Empty.");
-    }else if(!isContainsUppercase.test(password)){
-        alert("Error: The password should contain Uppercase characters.");
-    }else if(!isContainsLowercase.test(password)){
-        alert("Error: The password should contain Lowercase characters.");
-    }else if(!isContainsNumber.test(password)){
-        alert("Error: The password should contain a Number.");
-    }else if(!isContainsSymbol.test(password)){
-        alert("Error: The password should contain Symbol characters.");
-    }else if(password.length < 14){
-        alert("Error: The Password should be at least 14 characters.");
-    }else if(confirmPassword == ""){
-        alert("Error: The Confirm Password field is Empty.");
-    }else if (password != confirmPassword) {
-        alert("Error: The Password should be the same");
-    }else{
-        alert("Logged in");
-    }
+});
 }
-
-// document.getElementById('demo').innerHTML = 'Input is Reqiured.';

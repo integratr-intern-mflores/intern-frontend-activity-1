@@ -5,11 +5,14 @@ header .header{
   /* h */
   height: 45px;
 }
-h3{
-  margin: 0;
+h2{
+  margin: 0px;
+  padding: 10px;
 }
 p{
+  font-size: 15px;
   margin: auto;
+  padding: 10px;
 }
 header a img{
   /* w */
@@ -32,7 +35,7 @@ button{
   /* mt */
   /* margin-top: -31px; */
   /* mb */
-margin-bottom: 26px;
+/* margin-bottom: 26px; */
 }
 .form {
   /* pos */
@@ -41,10 +44,12 @@ margin-bottom: 26px;
   z-index: 1;
   /* bgc */
   background: #FFFFFF;
+  /* mah */
+  max-height: 500px;
   /* maw */
   max-width: 360px;
   /* p */
-  padding: 45px;
+  padding: 30px;
   /* ta:c */
   text-align: center;
   /* bxsh:ra */
