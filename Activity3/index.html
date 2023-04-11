@@ -10,31 +10,43 @@
 <body>
     <div>
         <form action="">
-            <div class="ContainerTextbox">
-                              <!-- tb == TextBox -->
-            <input type="text" class="text" id="tbFName" placeholder="First Name">
-            <input type="text" class="text" id="tbMName" placeholder="Middle Name">
-            <input type="text" class="text" id="tbLName" placeholder="Last Name">
+            <div class="mainContainer">
+                <div class="ContainerTextbox">
+                    <div class="con">
+                        <label for="tbFName">First Name</label><br>
+                        <input type="text" class="text" id="tbFName">
+                    </div>
+                    <div class="con">
+                        <label for="tbMName">Middle Name</label><br>
+                        <input type="text" class="text" id="tbMName">
+                    </div>
+    
+                    <div class="con">
+                        <label for="tbLName">Last Name</label><br>
+                        <input type="text" class="text" id="tbLName">
+                    </div>
+                </div>
+                <div class="checkboxes">
+                    <!-- cb == CheckBox -->
+                    <input type="checkbox"  id="cbBasketball" value="Basketball">Basketball<br>
+                    <input type="checkbox"  id="cbVolleyBall" value="VolleyBall">VolleyBall<br>
+                    <input type="checkbox"  id="cbBadminton"  value="Badminton">Badminton<br>
+                    <input type="checkbox"  id="cbSoccer"     value="Soccer">Soccer<br>
+                    <input type="checkbox"  id="cbBaseball"   value="Baseball">Baseball<br>
+                    <input type="checkbox"  id="cbTennis"     value="Tennis">Tennis<br>
+                    <input type="checkbox"  id="cbSurfing"    value="Surfing">Surfing<br>
+                </div>
             </div>
-
-            <div>
-                                       <!-- cb == CheckBox -->
-                <input type="checkbox"  id="cbBasketball" value="Basketball">Basketball<br>
-                <input type="checkbox"  id="cbVolleyBall" value="VolleyBall">VolleyBall<br>
-                <input type="checkbox"  id="cbBadminton"  value="Badminton">Badminton<br>
-                <input type="checkbox"  id="cbSoccer"     value="Soccer">Soccer<br>
-                <input type="checkbox"  id="cbBaseball"   value="Baseball">Baseball<br>
-                <input type="checkbox"  id="cbTennis"     value="Tennis">Tennis<br>
-                <input type="checkbox"  id="cbSurfing"    value="Surfing">Surfing<br>
+            <div class="btn">
+                <input type="button" class="button" value="Submit" onclick="MainDriver()">
             </div>
-            <input type="button" value="Submit" onclick="MainDriver()">
         </form>
-
-        <div>
+        <div class="display">
                  <!-- s == Span -->
+                 <p>Fullname:</p>
             <span id="sFullName"></span>
-        </div>
-        <div>
+            <br>
+            <p>Sports:</p>
             <span id="sSports"></span>
         </div>
     </div>
