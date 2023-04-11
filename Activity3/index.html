@@ -5,35 +5,39 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div>
         <form action="">
-            <input type="text">
-            <input type="text">
-            <input type="text">
-            <div>
-                <input type="checkbox" name="" id="" value="Basketball">
-                <input type="checkbox" name="" id="" value="VolleyBall">
-                <input type="checkbox" name="" id="" value="Badminton">
-                <input type="checkbox" name="" id="" value="Soccer">
-                <input type="checkbox" name="" id="" value="Baseball">
-                <input type="checkbox" name="" id="" value="Tennis">
-                <input type="checkbox" name="" id="" value="Surfing">
-           
+            <div class="ContainerTextbox">
+                              <!-- tb == TextBox -->
+            <input type="text" class="text" id="tbFName" placeholder="First Name">
+            <input type="text" class="text" id="tbMName" placeholder="Middle Name">
+            <input type="text" class="text" id="tbLName" placeholder="Last Name">
             </div>
-            <input type="button" value="Submit">
 
+            <div>
+                                       <!-- cb == CheckBox -->
+                <input type="checkbox"  id="cbBasketball" value="Basketball">Basketball<br>
+                <input type="checkbox"  id="cbVolleyBall" value="VolleyBall">VolleyBall<br>
+                <input type="checkbox"  id="cbBadminton"  value="Badminton">Badminton<br>
+                <input type="checkbox"  id="cbSoccer"     value="Soccer">Soccer<br>
+                <input type="checkbox"  id="cbBaseball"   value="Baseball">Baseball<br>
+                <input type="checkbox"  id="cbTennis"     value="Tennis">Tennis<br>
+                <input type="checkbox"  id="cbSurfing"    value="Surfing">Surfing<br>
+            </div>
+            <input type="button" value="Submit" onclick="MainDriver()">
         </form>
 
         <div>
-            <p>Fullname:
-                No Selected sports
-                1.Basketball
-                2.VolleyBall
-            </p>
-
+                 <!-- s == Span -->
+            <span id="sFullName"></span>
+        </div>
+        <div>
+            <span id="sSports"></span>
         </div>
     </div>
+    <script src="script.js"></script>
 </body>
 </html>

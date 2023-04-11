@@ -1,0 +1,12 @@
+.text {
+    width: 30%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+  }
+  
+  .textbox .text::placeholder {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
