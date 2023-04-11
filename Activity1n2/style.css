@@ -45,7 +45,7 @@ button{
   /* bgc */
   background: #FFFFFF;
   /* mah */
-  max-height: 500px;
+  max-height: auto;
   /* maw */
   max-width: 360px;
   /* p */
@@ -67,7 +67,7 @@ button{
   /* bd  */
   border: 0;
   /* m  */
-  margin: 5px 5px 5px; 
+  margin: 5px 5px 0px; 
  /* p  */
   padding: 15px;
   /* bxz  */

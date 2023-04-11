@@ -30,15 +30,21 @@ function formValidation(){
             foundNameArr.focus();
             return false;
         }
+        if(input.length > 0) {
+            document.getElementById(foundArr).innerHTML = 'Approved.';
+            foundNameArr.style.border = "1px solid green";
+            foundArr.style.color = "green";
+            foundNameArr.focus();
+            console.log("gumanas");
+            return false;
+            
+        }
    console.log(foundArr);
    console.log(foundNameArr);
    return false;
-
-
 });
 validatePassword(avpass, avcpass);
 }
-
 function validatePassword(vpass, vcpass)
 {
     if (vpass.length < 14) {
