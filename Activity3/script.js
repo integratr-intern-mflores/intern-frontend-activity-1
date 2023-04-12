@@ -37,6 +37,4 @@ function TransData(item, index){
     console.log("test7");
     document.getElementById("sSports").innerHTML = text;
     console.log("test8");
-   
-
 }

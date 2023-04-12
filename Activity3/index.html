@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Activity 3</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -26,6 +26,8 @@
                         <input type="text" class="text" id="tbLName">
                     </div>
                 </div>
+
+                <div class="containerCheckboxes"></div>
                 <div class="checkboxes">
                     <!-- cb == CheckBox -->
                     <input type="checkbox"  id="cbBasketball" value="Basketball">Basketball<br>
@@ -36,19 +38,19 @@
                     <input type="checkbox"  id="cbTennis"     value="Tennis">Tennis<br>
                     <input type="checkbox"  id="cbSurfing"    value="Surfing">Surfing<br>
                 </div>
-            </div>
-            <div class="btn">
-                <input type="button" class="button" value="Submit" onclick="MainDriver()">
+
+                <div class="btn">
+                    <input type="button" class="button" value="Submit" onclick="MainDriver()">
+                </div>
+                <div class="display">
+                    <!-- s == Span -->
+                    <p>Fullname:<span id="sFullName"></span></p>
+               <p>Sports:</p>
+               <span id="sSports"></span>
+           </div>
             </div>
         </form>
-        <div class="display">
-                 <!-- s == Span -->
-                 <p>Fullname:</p>
-            <span id="sFullName"></span>
-            <br>
-            <p>Sports:</p>
-            <span id="sSports"></span>
-        </div>
+        
     </div>
     <script src="script.js"></script>
 </body>
