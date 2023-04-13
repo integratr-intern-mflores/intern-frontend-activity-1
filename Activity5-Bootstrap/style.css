@@ -1,0 +1,78 @@
+.navbar{
+/* border-style: solid; */
+padding: 25px;
+}
+.bStyle{
+  /* border-style: solid; */
+}
+
+.roundYellow{
+  background-color: #eea302;
+  height: 25px;
+  width: 25px;
+  border-style: solid;
+  border-width: thin;
+}
+.roundRed{
+  background-color: #ff3b25;
+  height: 25px;
+  width: 25px;
+  border-style: solid;
+  border-width: thin;
+
+}
+.roundCyan{
+  background-color: #80d8da;
+  height: 25px;
+  width: 25px;
+  border-style: solid;
+  border-width: thin;
+}
+.roundButton{
+  height: 140px;
+  width: 140px;
+}
+.divTest{
+  height: 200px;
+  width: 200px;
+}
+.fs-4{
+  line-height: normal;
+  font-size: 22px;
+}
+.fEditor{
+  font-size: 16px;
+ margin-left: 10px;
+ margin-top: 5px;
+}
+.nav-item{
+ 
+}
+.rightNavBar{
+  text-align: center;
+  line-height: 24px;
+  margin-right: 20 px;
+}
+
+.bar{
+  /* border-left: 2px solid black; */
+  height: 25px;
+}
+.pad8{
+  padding: 30px !important;
+}
+.mar{
+  margin: 20px;
+}
+.lFont{
+  font-size: 100px;
+}
+a{
+  color: black !important;
+  border: none !important;
+  text-decoration:none;
+  
+  }
+  .breakAll {
+    word-break: break-all;
+  }
