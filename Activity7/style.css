@@ -1,0 +1,13 @@
+.borderStyle{
+    /* border-style: solid; */
+}
+.borderStyle2{
+    border-style: solid;
+}
+.imgBg{
+    background-image: url('Assets/Door\ hand.jpg');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    max-width: 100%;
+    height: auto;
+}
