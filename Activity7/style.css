@@ -6,8 +6,9 @@
 }
 .imgBg{
     background-image: url('Assets/Door\ hand.jpg');
-    background-size: 100%;
+    background-size: auto,cover;
     background-repeat: no-repeat;
+    background-position: 0 0,50% 50%;
     max-width: 100%;
     height: auto;
 }
